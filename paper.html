@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>陈伟|长江大学</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="js/jQuery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!-- 头部 -->
+		<div id="head">
+			<div id="head_l">
+				<a href="index.html">陈伟</a>
+				<span>长江大学&nbsp;&nbsp;地球物理与石油资源学院</span>
+			</div>
+			<div id="head_r">
+				<span><a href="#">中文</a>&nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;<a href="#">English</a></span>
+			</div>
+		</div>
+		<!-- 头部 -->
+		<!-- 导航栏 -->
+		<div id="nav">
+			<div id="menu">
+				<ul>
+					<li><a href="index.html">主页</a></li>
+					<li><a href="">研究</a></li>
+					<li id="paper"><a href="paper.html" >论文</a>
+						<ul id="paper_type">
+							<li><a href="#">期刊论文</a> </li>
+							<li><a href="#">会议摘要</a>  </li>
+							<li><a  href="#">书</a> </li>
+						</ul>
+					</li>
+					<li><a href="">教学</a></li>
+					<li><a href="">简历</a></li>
+					<li><a href="">新闻</a></li>
+					<li><a href="">链接</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- 导航栏 -->
+		
+		<!-- 内容 -->
+		<div id="paper_content">
+			<div id="paper_title"><span id="paper_title_name">期刊论文</span><span id="paper_title_local"><span>当前位置</span>：论文>期刊论文</span></div>
+			<div>
+				<div id="Submitted">
+					<span>Submitted papers</span>
+					<ul>
+						<li><p>[1]Yangkang Chen, Weilin Huang, Dong Zhang, Wei Chen*. An open-source Matlab code package for improved rank-reduction 3D seismic data denoising and reconstruction. Computers & Geosciences, 2016, 95: 59-66. (SCI检索，*通讯作者)</p></li>
+						<li><p>[1]Yangkang Chen, Weilin Huang, Dong Zhang, Wei Chen*. An open-source Matlab code package for improved rank-reduction 3D seismic data denoising and reconstruction. Computers & Geosciences, 2016, 95: 59-66. (SCI检索，*通讯作者)</p></li>
+					</ul>
+				</div>
+				
+				<div>
+					<span>2019</span>
+					<ul>
+						<li><p>[1]Yangkang Chen, Weilin Huang, Dong Zhang, Wei Chen*. An open-source Matlab code package for improved rank-reduction 3D seismic data denoising and reconstruction. Computers & Geosciences, 2016, 95: 59-66. (SCI检索，*通讯作者)</p></li>
+						<li><p>[1]Yangkang Chen, Weilin Huang, Dong Zhang, Wei Chen*. An open-source Matlab code package for improved rank-reduction 3D seismic data denoising and reconstruction. Computers & Geosciences, 2016, 95: 59-66. (SCI检索，*通讯作者)</p></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+		</div>
+		<!-- 内容 -->
+		<script>
+			$(function(){
+				$('#nav ul li').eq(0).css("background-color","#004784");
+				$('#nav ul li').eq(2).css("background-color","orange");
+			})
+			
+			$('#paper').mouseover(function(){
+				$('#paper_type').css("display","block");
+				$('#paper_type').css("position","fixed");
+			})
+			$('#paper').mouseout(function(){
+				$('#paper_type').css("display","none");
+			})
+		</script>
+	</body>
+</html>
